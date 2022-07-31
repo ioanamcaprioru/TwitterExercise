@@ -1,0 +1,216 @@
+/* am inceput sa scriu pentru ecran mic si cu media query am modificat pentru ecran mare   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62, 5%;
+  font-family: "-apple-system, BlinkMacSystemFont", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", " Cantarell", "Open Sans", "Helvetica Neue",
+    "sans-serif";
+}
+
+.content-container {
+  padding-top: 2.5rem;
+  padding-left: 3rem;
+}
+
+.logo-cl {
+  width: 2.7rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+h1,
+h3 {
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2.3rem;
+  /* margin-left: ; */
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+.google-photo,
+.apple-photo {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  border-radius: 2rem;
+  width: 19rem;
+  max-width: 25rem;
+  margin-top: 0.5rem;
+}
+
+.last {
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  padding-bottom: 0.5rem;
+}
+
+span {
+  display: flex;
+  flex-direction: row;
+  width: 19rem;
+  padding-top: 0.5rem;
+}
+span:before,
+span:after {
+  content: "";
+  flex: auto;
+  border-bottom: 1px solid #dadce0;
+  margin: auto;
+}
+span:before {
+  margin-right: 10px;
+}
+span:after {
+  margin-left: 10px;
+}
+
+.sign-up-text {
+  font-size: 0.7rem;
+  padding-right: 7rem;
+  padding-top: 0.5rem;
+}
+
+.sign-up-text a {
+  text-decoration: none;
+  color: rgb(29, 155, 240);
+}
+
+.member h3 {
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+}
+
+.sign-in {
+  color: rgb(29, 155, 240);
+  margin-bottom: 3rem;
+}
+
+.main-photo img {
+  position: relative;
+  width: 100%;
+  /* height: 50%; */
+}
+
+.bird img {
+  width: 50%;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ul-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.ul-container li a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding-right: 0.4rem;
+  /* padding-top: 10rem; */
+  color: inherit;
+}
+
+.copyr {
+  font-family: inherit;
+  font-size: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+@media (min-width: 600px) {
+  .title h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* padding: 0 calc( 500px - 50vw );   */
+  }
+
+  .no-member {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grand-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    width: 100%;
+    height: 45rem;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding-top: 2.5rem;
+    width: 50%;
+    padding-left: 2rem;
+  }
+
+  .title h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    transform: scale(1, 0.8);
+    padding-bottom: 1rem;
+  }
+
+  .no-member h3 {
+    font-size: 2rem;
+    transform: scale(1, 0.8);
+  }
+
+  .member h3 {
+    font-size: 1rem;
+  }
+
+  .main-photo img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-photo {
+    margin-right: 1rem;
+  }
+
+  .bird img {
+    width: 25%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+}
